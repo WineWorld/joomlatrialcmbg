@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system">
+	<name>System - My Shortcodes (for Stability Template)</name>
+	<version>1.0.0</version>
+	<creationDate>Jul 2014</creationDate>
+	<author>Valentín García</author>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>http://www.valentingarcia.com.mx</authorUrl>
+    <copyright>Copyright (C) Valentín García 2013</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<description>A simple plugin to replace values in site output based on RokReplacer from RocketTheme</description>
+	<files>
+		<filename plugin="myshortcodes">myshortcodes.php</filename>
+		<filename plugin="myshortcodes">index.html</filename>
+	</files>
+</extension>

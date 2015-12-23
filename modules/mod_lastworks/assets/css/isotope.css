@@ -1,0 +1,107 @@
+#filters{
+	padding: 0 10px;
+    top: 0;
+	text-align:center;
+}
+
+/* ---- button ---- */
+
+.lastworks_isotope .button{
+	padding:4px 10px;
+	border:1px solid;
+	display:inline-block;
+	color:#666;
+	background:none;
+}
+
+.lastworks_isotope .button:hover,
+.lastworks_isotope .button.is-checked,
+.lastworks_isotope .button:active {
+  color: #CCCCCC;
+  border-color:#CCCCCC;
+  background:none;
+}
+
+.lastworks_isotope .button:active,
+.lastworks_isotope .button.is-checked {
+  background-color: none;
+}
+
+/* ---- button-group ---- */
+
+.lastworks_isotope .button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.lastworks_isotope .button-group .button {
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	margin-left: 0;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.lastworks_isotope .button-group .button:first-child { }
+.lastworks_isotope .button-group .button:last-child { }
+
+/* ---- isotope ---- */
+
+.lastworks_isotope .isotope {
+	margin-top:20px;
+}
+
+/* clear fix */
+.lastworks_isotope .isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.lastworks_isotope .element-item {
+  position: relative;
+  float: left;
+  width: 221px;
+  height: auto;
+  padding: 10px;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+}
+
+.lastworks_isotope .element-item img{
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+.lastworks_isotope .element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.lastworks_isotope .element-item h3.name {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: normal;
+  background:rgba(255,255,255,0.8);
+  z-index: 1;
+}
+.lastworks_isotope .element-item h3.name a {
+	padding:6px 12px;
+	color:#000;
+}
+.lastworks_isotope .element-item h3.name a:hover {
+	text-decoration:none;
+}

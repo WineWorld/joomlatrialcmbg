@@ -1,0 +1,32 @@
+/**
+ * @version		$Id$
+ * @author		NooTheme
+ * @package		Joomla.Site
+ * @subpackage	mod_noo_maps
+ * @copyright	Copyright (C) 2013 NooTheme. All rights reserved.
+ * @license		License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+ */
+
+.noo-m {
+}
+.noo-m img {
+    max-width: none !important;
+}
+.noo-m-actbar-list {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.noo-m-info {
+}
+.noo-m-info h1 {
+}
+.noo-m-act {
+}
+.noo-m-act a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+}
+.dirform-inner {
+}

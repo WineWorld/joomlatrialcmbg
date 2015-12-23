@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+	<name>Last Works</name>
+	<author>Valentín García</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>Copyright (C) 2013 Valentín García.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>www.htmgarcia.com</authorUrl>
+	<version>2.1.1</version>
+	<description>MOD_LASTWORKS_DESCRIPTION</description>
+	<files>
+		<filename module="mod_lastworks">mod_lastworks.php</filename>
+		<filename module="mod_lastworks">index.html</filename>
+		<filename module="mod_lastworks">helper.php</filename>
+		<filename module="mod_lastworks">LICENSE.txt</filename>
+		<folder module="mod_lastworks">assets</folder>
+		<folder module="mod_lastworks">tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_lastworks.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="vgcategories" type="category" extension="com_content" multiple="true" size="10" default="" label="MOD_LASTWORKS_CATEGORY" description="MOD_LASTWORKS_CATEGORY_DESC" >
+				
+				</field>
+				<field name="vgfilter" type="list" default="any" label="MOD_LASTWORKS_FILTER_ARTICLES" description="MOD_LASTWORKS_FILTER_ARTICLES_DESC">
+					<option value="any">MOD_LASTWORKS_FILTER_ANY</option>
+					<option value="no_feat">MOD_LASTWORKS_FILTER_NO_FEATURED</option>
+					<option value="feat">MOD_LASTWORKS_FILTER_JUST_FEATURED</option>
+				</field>
+				<field name="vgorderingtype" type="list" default="created" label="MOD_LASTWORKS_ORDERING_TYPE" description="MOD_LASTWORKS_ORDERING_TYPE_DESC">
+					<option value="created">MOD_LASTWORKS_BY_CREATION_DATE</option>
+					<option value="modified">MOD_LASTWORKS_BY_MODIFIED_DATE</option>
+					<option value="ordering">MOD_LASTWORKS_BY_ORDER</option>
+				</field>
+				<field name="vgordering" type="list" default="ASC" label="MOD_LASTWORKS_ORDERING" description="MOD_LASTWORKS_ORDERING_DESC">
+					<option value="ASC">MOD_LASTWORKS_ASC</option>
+					<option value="DESC">MOD_LASTWORKS_DESC</option>
+				</field>
+				<field
+					name="vgnumarticles"
+					type="integer" 
+					first="1" 
+					last="99"
+					step="1"
+					default="6"
+					label="MOD_LASTWORKS_NUMBER_ARTICLES_SHOW"
+					description="MOD_LASTWORKS_NUMBER_ARTICLES_SHOW_DESC" />
+				<field
+					name="vglayout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

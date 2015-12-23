@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Noo Google Map</name>
+	<author>NooTheme</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>Copyright (C) 2013 NooTheme. All rights reserved.</copyright>
+	<license>License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php</license>
+	<authorEmail>admin@nootheme.com</authorEmail>
+	<authorUrl>http://nootheme.com</authorUrl>
+	<version>1.1.4</version>
+	<description>
+		<![CDATA[
+			<span style="color: #008000;"><strong>Noo Google Map Module for Joomla 3!</strong></span><br />
+			<div style='font-weight:normal'>
+			This module allows you to quickly and easily add the Google Map to your Joomla 3 website. It allows you set your address information in a HTML format on the map module with a bubble.
+			<p>Copyright 2013 <a href="http://nootheme.com" title="Visit nootheme.com">NooTheme.com</a>.</p>
+			</div>
+		 ]]>
+	</description>
+	<files>
+		<filename module="mod_noo_maps">mod_noo_maps.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<filename>index.html</filename>
+		<filename>mod_noo_maps.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_noo_maps.ini</language>
+		<language tag="en-GB">en-GB.mod_noo_maps.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_noo_maps/elements">
+				<field
+					name="address"
+					type="text"
+					label="MOD_NOO_MAPS_ADDRESS"
+					description="MOD_NOO_MAPS_ADDRESS_DESC" />
+				<field
+					name="description"
+					type="textarea"
+					label="MOD_NOO_MAPS_DESCRIPTION_LABEL"
+					cols="40" 
+					rows="5" 
+					size="120" 
+					filter="safehtml" 
+					description="MOD_NOO_MAPS_DESCRIPTION_DESC" />
+				<field
+					name="latitude"
+					type="text"
+					label="MOD_NOO_MAPS_LATITUDE"
+					description="MOD_NOO_MAPS_LATITUDE_DESC" />
+				<field
+					name="longitude"
+					type="text"
+					label="MOD_NOO_MAPS_LONGITUDE"
+					description="MOD_NOO_MAPS_LONGITUDE_DESC" />
+				<field
+					name="lang"
+					type="list"
+					default="en"
+					label="MOD_NOO_MAPS_LANGUAGE"
+					description="MOD_NOO_MAPS_LANGUAGE_DESC">
+					<option value="ar">ARABIC</option>
+					<option value="eu">BASQUE</option>
+					<option value="bg">BULGARIAN</option>
+					<option value="bn">BENGALI</option>
+					<option value="ca">CATALAN</option>
+					<option value="cs">CZECH</option>
+					<option value="da">DANISH</option>
+					<option value="de">GERMAN</option>
+					<option value="el">GREEK</option>
+					<option value="en">ENGLISH</option>
+					<option value="en-AU">ENGLISH (AUSTRALIAN)</option>
+					<option value="en-GB">ENGLISH (GREAT BRITAIN)</option>
+					<option value="es">SPANISH</option>
+					<option value="eu">BASQUE</option>
+					<option value="fa">FARSI</option>
+					<option value="fi">FINNISH</option>
+					<option value="fil">FILIPINO</option>
+					<option value="fr">FRENCH</option>
+					<option value="gl">GALICIAN</option>
+					<option value="gu">GUJARATI</option>
+					<option value="hi">HINDI</option>
+					<option value="hr">CROATIAN</option>
+					<option value="hu">HUNGARIAN</option>
+					<option value="id">INDONESIAN</option>
+					<option value="it">ITALIAN</option>
+					<option value="iw">HEBREW</option>
+					<option value="ja">JAPANESE</option>
+					<option value="kn">KANNADA</option>
+					<option value="ko">KOREAN</option>
+					<option value="lt">LITHUANIAN</option>
+					<option value="lv">LATVIAN</option>
+					<option value="ml">MALAYALAM</option>
+					<option value="mr">MARATHI</option>
+					<option value="nl">DUTCH</option>
+					<option value="no">NORWEGIAN</option>
+					<option value="pl">POLISH</option>
+					<option value="pt">PORTUGUESE</option>
+					<option value="pt-BR">PORTUGUESE (BRAZIL)</option>
+					<option value="pt-PT">PORTUGUESE (PORTUGAL)</option>
+					<option value="ro">ROMANIAN</option>
+					<option value="ru">RUSSIAN</option>
+					<option value="sk">SLOVAK</option>
+					<option value="sl">SLOVENIAN</option>
+					<option value="sr">SERBIAN</option>
+					<option value="sv">SWEDISH</option>
+					<option value="tl">TAGALOG</option>
+					<option value="ta">TAMIL</option>
+					<option value="te">TELUGU</option>
+					<option value="th">THAI</option>
+					<option value="tr">TURKISH</option>
+					<option value="uk">UKRAINIAN</option>
+					<option value="vi">VIETNAMESE</option>
+					<option value="zh-CN">CHINESE (SIMPLIFIED)</option>
+				<option value="zh-TW">CHINESE (TRADITIONAL)</option>
+				</field>
+				<field
+					name="zoom"
+					type="text"
+					default="14"
+					label="MOD_NOO_MAPS_ZOOM"
+					description="MOD_NOO_MAPS_ZOOM_DESC" />
+				<field
+					name="width"
+					type="text"
+					default="940"
+					label="MOD_NOO_MAPS_WIDTH"
+					description="MOD_NOO_MAPS_WIDTH_DESC" />
+				<field
+					name="height"
+					type="text"
+					default="500"
+					label="MOD_NOO_MAPS_HEIGHT"
+					description="MOD_NOO_MAPS_HEIGHT_DESC" />
+				<field
+					name="alw_infowindow"
+					type="radio"
+					class="btn-group "
+					default="1"
+					label="MOD_NOO_MAPS_INFOWINDOW"
+					description="MOD_NOO_MAPS_INFOWINDOW_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+					name="scrollwheel"
+					type="radio"
+					class="btn-group "
+					default="1"
+					label="MOD_NOO_MAPS_SCROLLWHEEL"
+					description="MOD_NOO_MAPS_SCROLLWHEEL_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

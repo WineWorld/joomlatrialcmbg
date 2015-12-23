@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+    <name>vg_stability</name>
+    <version>1.2.0</version>
+    <creationDate>Jun 2014</creationDate>
+    <author>Valentín García</author>
+    <authorEmail>htmgarcia@gmail.com</authorEmail>
+    <authorUrl>http://www.htmgarcia.com</authorUrl>
+    <copyright>Copyright (C) Valentín García 2013</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+    <description>
+        <![CDATA[
+        Stability. Joomla Premium Template. Info and Support: <a href="http://themeforest.net/user/htmgarcia" target="_blank">http://themeforest.net/user/htmgarcia</a>
+        ]]>
+    </description>
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>includes</folder>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>error.php</filename>
+        <filename>component.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <positions>
+        <position>menu</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>slide</position>
+        <position>bodyleft</position>
+        <position>bodyright</position>
+        <position>showcase-a</position>
+        <position>showcase-b</position>
+        <position>showcase-c</position>
+        <position>showcase-d</position>
+        <position>showcase-e</position>
+        <position>showcase-f</position>
+        <position>full-top</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>bottom-c</position>
+        <position>bottom-d</position>
+        <position>inner</position>
+        <position>bottom-e</position>
+        <position>bottom-f</position>
+        <position>bottom-g</position>
+        <position>bottom-h</position>
+        <position>banner</position>
+        <position>full</position>
+        <position>footer-a</position>
+        <position>footer-b</position>
+        <position>footer-c</position>
+        <position>footer-d</position>
+        <position>debug</position>
+    </positions>
+    <languages>
+        <language tag="en-GB">en-GB.tpl_vg_stability.ini</language>
+    </languages>
+    <config>
+        <fields name="params">    
+            <fieldset name="LOGO">
+                <field name="vg_logo_type" type="radio" class="btn-group" default="image" label="Logo type" description="Choose image or text as logo">
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                </field>
+                <field name="vg_logo_image" type="media" label="Logo Image" description="Only when Logo type is set as Image" />
+                <field name="vg_logo_text" type="text" label="Logo Text" description="Only when Logo type is set as Text" default="" />
+                <field name="vg_logo_subtext" type="text" label="Logo Subtitle" description="Subtitle below logo" default="" />
+            </fieldset>
+            <fieldset name="COLORS">
+                <field name="vg_color" type="list" default="red" label="Color scheme" description="Choose color scheme">
+                    <option value="red">Red</option>
+                    <option value="asbestos">Asbestos</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="orange">Orange</option>
+                    <option value="silver">Silver</option>
+                    <option value="violet">Violet</option>
+                    <option value="yellow">Yellow</option>
+                </field>
+            </fieldset>
+            <fieldset name="FONTS">
+                <field name="vg_fonts" type="radio" class="btn-group btn-group-yesno" default="1" label="Enable Google Fonts" description="Enable or Not the nGoogle Fonts">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="vg_font1" type="text" label="Google font 1" description="EXAMPLE: Open+Sans:400,600" default="Anton" />
+                <field name="vg_font2" type="text" label="Google font 2" description="EXAMPLE: Open+Sans:400,600" default="Muli:300,400,400italic,300italic" />
+                <field name="vg_font3" type="text" label="Google font 3" description="EXAMPLE: Open+Sans:400,600" default="Oswald" />
+            </fieldset>
+            <fieldset name="APPLE_ICONS">
+                <field name="vg_icon_favicon" type="media" label="Favicon" default="" description="Choose an ICO image" />
+                <field name="vg_icon_57x57" type="media" label="Icon 57x57" default="" description="Choose a PNG image" />
+                <field name="vg_icon_72x72" type="media" label="Icon 72x72" default="" description="Choose a PNG image" />
+                <field name="vg_icon_114x114" type="media" label="Icon 114x114" default="" description="Choose a PNG image" />
+                <field name="vg_icon_144x144" type="media" label="Icon 144x144" default="" description="Choose a PNG image" />
+            </fieldset>
+            <fieldset name="advanced">        
+                <field name="vg_analytics" type="textarea" default="" filter="raw" label="Google analytics script" description="Add your full Google analytics here." cols="35" rows="5" />
+                <field name="vg_css" type="textarea" label="Custom CSS" description="Set/Change your custom CSS class" default="" cols="35" rows="5" />
+                <field name="vg_copy" type="textarea" default="" filter="raw" label="Footer content (HTML)" description="Copyright Info" cols="35" rows="5" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="vg_top" type="radio" class="btn-group btn-group-yesno" default="1" label="Go top button" description="Enable or Not the go top button">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="vg_layout" type="radio" class="btn-group" default="full-width" label="Layout" description="Select layout style">
+                    <option value="boxed">Boxed</option>
+                    <option value="full-width">Full Width</option>
+                </field>
+                <field name="vg_body_image" type="media" label="Background Image (body)" description="Choose a background image" />
+                <!--field name="vg_menuhome" type="radio" class="btn-group btn-group-yesno" default="1" label="Display Home Icon" description="Enabled the Home menu icon on Main menu">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field-->
+            </fieldset>
+        </fields>
+    </config>
+</extension>
